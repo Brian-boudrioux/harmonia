@@ -1,10 +1,13 @@
 {
   "name": "@harmonia/client",
   "type": "module",
+  "homepage": "https://https://brian-boudrioux.github.io/harmonia",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
