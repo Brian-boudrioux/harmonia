@@ -1,7 +1,7 @@
 {
   "name": "@harmonia/client",
   "type": "module",
-  "homepage": "https://https://brian-boudrioux.github.io/harmonia",
+  "homepage": "https://brian-boudrioux.github.io/harmonia",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
