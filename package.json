@@ -15,7 +15,7 @@
     "server"
   ],
   "scripts": {
-    "postinstall": "node -e \"if (process.env.NODE_ENV !== 'production')\" && husky install",
+    "postinstall": "node -e \"process.env.NODE_ENV !== 'production'\" && husky install",
     "db:migrate": "npm run db:migrate --workspace=server",
     "db:seed": "npm run db:seed --workspace=server",
     "dev": "concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm:dev:*\"",
